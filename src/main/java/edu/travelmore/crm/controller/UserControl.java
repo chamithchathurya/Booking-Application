@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 
 public class UserControl {
-    @GetMapping("/getUser")
+    @GetMapping("/get-user")
     public User getUser(){
         UserService service=new UserService();
         return service.getUser();

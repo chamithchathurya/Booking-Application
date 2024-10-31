@@ -10,7 +10,7 @@ import lombok.*;
 @ToString
 public class User {
 
-    private Long id;
+    private String id;
     private String userName;
     private String email;
     private String password;

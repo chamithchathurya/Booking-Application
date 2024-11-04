@@ -2,15 +2,11 @@ package edu.travelmore.crm.service;
 
 import edu.travelmore.crm.dto.User;
 
-public class UserService {
+import java.util.List;
 
-    public User getUser(){
-        return new User(
-                "100012",
-                "Chamith Chathurya",
-                "chamith@gmail.com",
-                "Chamith1234",
-                "User");
+public interface UserService  {
+    public List<User> getUser();
 
-    }
+    public void addUser(User user);
+
 }

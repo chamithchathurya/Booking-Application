@@ -1,7 +1,7 @@
 package edu.travelmore.crm.controller;
 
 import edu.travelmore.crm.dto.User;
-import edu.travelmore.crm.service.UserService;
+import edu.travelmore.crm.service.user.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;

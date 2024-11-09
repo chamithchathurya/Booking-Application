@@ -1,4 +1,4 @@
-package edu.travelmore.crm.service;
+package edu.travelmore.crm.service.user;
 
 import edu.travelmore.crm.dto.User;
 

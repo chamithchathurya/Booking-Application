@@ -7,6 +7,9 @@ import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @RequiredArgsConstructor
 @Service
 public class ApartmentServiceImpl implements ApartmentService{
@@ -16,5 +19,12 @@ public class ApartmentServiceImpl implements ApartmentService{
     @Override
     public void addApartment(Apartment apartment) {
         repository.save(modelMapper.map(apartment, ApartmentEntity.class));
+    }
+
+    @Override
+    public List<Apartment> getAllApartment() {
+        List<Apartment> apartmentList=new ArrayList<>();
+        repository.findAll().forEach(apartmentEntity -> apartmentList.add(modelMapper.map(apartmentEntity, Apartment.class)));
+        return apartmentList;
     }
 }

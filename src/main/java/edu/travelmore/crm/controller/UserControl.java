@@ -22,6 +22,7 @@ public class UserControl {
     public List<User> getUser(){
         return service.getUser();
     }
+
     @PostMapping("/add-user")
     public void addUser(@RequestBody User user){
         service.addUser(user);

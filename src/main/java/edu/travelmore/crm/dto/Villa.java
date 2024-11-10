@@ -2,17 +2,19 @@ package edu.travelmore.crm.dto;
 
 import lombok.*;
 
+
+@Getter
+@Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@Setter
-@Getter
 @ToString
-public class Property {
-
+public class Villa {
     private Long id;
     private String name;
-    private String location;
     private String description;
-    private double price;
-    private String type;
+    private Double price;
+    private String location;
+
+
+    private Amenities amenities;
 }
